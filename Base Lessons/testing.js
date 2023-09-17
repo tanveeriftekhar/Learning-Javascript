@@ -23,3 +23,26 @@ var c = OP4 / OP1;
 console.log(c);
 var d = OP4 * OP1 * OP2 * OP3;
 console.log(d);
+
+//shorthand operators 
+var myVar = 10;
+myVar = myVar+5;
+console.log(myVar);
+myVar += 5
+console.log(myVar);
+myVar -= 10
+console.log(myVar);
+myVar /= 2
+console.log(myVar);
+myVar *= 5;
+console.log(myVar);
+myVar++
+console.log(myVar);
+myVar +=1;
+console.log(myVar);
+myVar++
+console.log(myVar);
+++myVar;
+console.log(myVar);
+
+//lpgging into console
