@@ -46,3 +46,20 @@ console.log(myVar);
 console.log(myVar);
 
 //lpgging into console
+var myVar = "Tanveer";
+// document.write(myVar);
+console.log(myVar);
+
+// Boolean Test 
+var iLikeMeat = true
+console.log(iLikeMeat);
+
+var iLikeMeat = false
+console.log(iLikeMeat);
+
+c = 7>5
+console.log(c);
+
+c = 7<5
+console.log(c);
+
