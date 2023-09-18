@@ -82,3 +82,19 @@ if (myNum > 10) {
 } else {
   document.write("My num is equal");
 }
+
+// else if lessons
+
+var myAge = 35;
+if (myAge > 30) {
+  document.write("You are more than 30");
+}
+else if (myAge > 20) {
+  document.write("You are more than 20");
+}
+else if (myAge > 10) {
+  document.write("You are more than 10");
+}
+else {
+  document.write("You are below 10!")
+}
