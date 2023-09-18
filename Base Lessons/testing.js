@@ -98,3 +98,31 @@ else if (myAge > 10) {
 else {
   document.write("You are below 10!")
 }
+
+// comparison operator 
+var x = 4; 
+if (x == 5){
+  document.write("The number is correct")
+}
+else {
+  document.write("The number is not correct")
+}
+
+
+var x = "5"; 
+if (x != 5){
+  document.write("The number is correct")
+}
+else {
+  document.write("The number is not correct")
+}
+
+if (x === 5 ){
+  document.write("The number is abs correct");
+}
+else if ( x === "5")
+{
+  document.write("The string is abs correct ")
+}else {
+  document.write("Hoyni kichu");
+}
