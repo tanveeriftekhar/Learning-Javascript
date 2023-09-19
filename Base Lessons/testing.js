@@ -126,3 +126,12 @@ else if ( x === "5")
 }else {
   document.write("Hoyni kichu");
 }
+
+//logical operator 
+var myAge = 25; 
+if ( myAge >= 18 && myAge <=30 ) {
+document.write ("You are an adult");
+}
+else {
+  document.write("You are not eligible");
+}
