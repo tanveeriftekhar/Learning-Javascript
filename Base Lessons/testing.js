@@ -127,9 +127,9 @@ if (myAge >= 18 && myAge <= 30) {
   document.write("You are not eligible");
 }
 
-var myAge = 50;
-if (myAge < 10 || myAge > 30) {
-  document.write("You are a school boy");
+var myAge ="50";
+if (myAge < 10 || myAge > 30 || myAge === 50) {
+  document.write("You are a not allowed");
 } else {
-  document.write("You are not a school boy");
+  document.write("You are allowed");
 }
