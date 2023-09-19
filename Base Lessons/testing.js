@@ -133,3 +133,11 @@ if (myAge < 10 || myAge > 30 || myAge === 50) {
 } else {
   document.write("You are allowed");
 }
+
+// While loop 
+var age = 5; 
+while (age < 10){
+  console.log("Your age is less than 10");
+  age++;
+}
+document.write ("You are now more than 10");
