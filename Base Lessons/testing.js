@@ -127,23 +127,30 @@ if (myAge >= 18 && myAge <= 30) {
   document.write("You are not eligible");
 }
 
-var myAge ="50";
+var myAge = "50";
 if (myAge < 10 || myAge > 30 || myAge === 50) {
   document.write("You are a not allowed");
 } else {
   document.write("You are allowed");
 }
 
-// While loop 
-var age = 5; 
-while (age < 10){
+// While loop
+var age = 5;
+while (age < 10) {
   console.log("Your age is less than 10");
   age++;
 }
-document.write ("You are now more than 10");
+document.write("You are now more than 10");
 
-// for loop 
-for (age = 5; age <15; age++){
+// for loop
+for (age = 5; age < 15; age++) {
   console.log("Your age is less than 15");
 }
 document.write("You are more than 15 now");
+
+// For loop extended with href
+var links = document.getElementsByTagName("a");
+for (i = 1; i < links.length; i++) {
+  console.log("This is link number ", +i);
+}
+document.write ("Äll the links have been displayed");
