@@ -141,3 +141,9 @@ while (age < 10){
   age++;
 }
 document.write ("You are now more than 10");
+
+// for loop 
+for (age = 5; age <15; age++){
+  console.log("Your age is less than 15");
+}
+document.write("You are more than 15 now");
