@@ -154,3 +154,15 @@ for (i = 1; i < links.length; i++) {
   console.log("This is link number ", +i);
 }
 document.write ("Äll the links have been displayed");
+
+// Break and Continue loop 
+for (i = 0; i < 10; i++) {
+if (i === 5 || i === 3 ){
+  continue;
+}
+console.log(i);
+if (i === 7){
+  break;
+}
+}
+console.log("Ï have broken outta the loop");
