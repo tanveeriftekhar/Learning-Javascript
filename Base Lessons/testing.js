@@ -46,7 +46,7 @@ console.log(myVar);
 
 //lpgging into console
 var myVar = "Tanveer";
-// document.write(myVar);
+document.write(myVar);
 console.log(myVar);
 
 // Boolean Test
