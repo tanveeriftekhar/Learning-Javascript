@@ -208,3 +208,16 @@ console.log(Math.ceil(7.5));
 console.log(Math.max(7,4,9,8));
 console.log(Math.min(7,4,9,8));
 console.log(Math.PI);
+
+// NaN Things 
+var a = "5"; 
+var b = 6; 
+if (isNaN(a)){
+  console.log("This is a number");
+}
+
+else {
+  console.log("This is not a number");
+}
+// When ! is used infront of some object then it becomes negative. 
+// Like (!ifNan (a)) means "a is not a number and it is false" or "a is a number" 
