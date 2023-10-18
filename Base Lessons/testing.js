@@ -180,3 +180,31 @@ getAverage(5,6);
 //so the variable can only used and called inside the function
 // If I create a variable outside a specific function, 
 // I can use it globally anywhere. 
+
+// Numbers 
+var a = 5; 
+var b = 6;
+console.log(a+b);
+
+// but 
+var a = "5"; //here a is a string, not a number  
+var b = 6; 
+
+// To check the data type, we can use this function called "type of"
+var a = 5; 
+var b = 6;
+console.log(a+b);
+console.log(typeof(a+b)); //it will show number in the debug console 
+
+var a = "6"; 
+var b = 6;
+console.log(a+b);
+console.log(typeof(a+b)); //it will show string in the debug console
+
+// Use of Math object in JS 
+console.log(Math.round(7.5));
+console.log(Math.floor(7.5));
+console.log(Math.ceil(7.5));
+console.log(Math.max(7,4,9,8));
+console.log(Math.min(7,4,9,8));
+console.log(Math.PI);
