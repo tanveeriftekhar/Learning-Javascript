@@ -174,3 +174,9 @@ function getAverage (a,b){
   console.log(average);
 }
 getAverage(5,6);
+
+// Variable scope 
+// In the upper cide average is created inside a functionfunction
+//so the variable can only used and called inside the function
+// If I create a variable outside a specific function, 
+// I can use it globally anywhere. 
