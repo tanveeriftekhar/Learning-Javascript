@@ -166,3 +166,11 @@ if (i === 7){
 }
 }
 console.log("Ï have broken outta the loop");
+
+// functions 
+
+function getAverage (a,b){
+  var average = (a+b) /2; 
+  console.log(average);
+}
+getAverage(5,6);
