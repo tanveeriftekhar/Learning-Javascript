@@ -221,3 +221,24 @@ else {
 }
 // When ! is used infront of some object then it becomes negative. 
 // Like (!ifNan (a)) means "a is not a number and it is false" or "a is a number" 
+
+
+// Strings 
+var myString = 'I am a demo string';
+console.log(myString);
+
+var myString = 'I\'m a demo string';
+console.log(myString);
+console.log(myString.length); //.length is to measure the length of the string 
+console.log(myString.toUpperCase());
+console.log(myString.toLowerCase());
+console.log(myString.indexOf("string"));
+
+var myString = "I am a fun string"; 
+
+if (myString.indexOf("string") === -1 ){
+  console.log("the word string is not in the string");
+}
+else {
+  console.log("the word string starts at position" )
+}
