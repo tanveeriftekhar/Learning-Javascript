@@ -232,13 +232,29 @@ console.log(myString);
 console.log(myString.length); //.length is to measure the length of the string 
 console.log(myString.toUpperCase());
 console.log(myString.toLowerCase());
-console.log(myString.indexOf("string"));
+console.log(myString.indexOf("string")); //.indexOf is used to to search the position of that specific word
 
-var myString = "I am a fun string"; 
+var myString = "I am a fun ninja string"; 
 
-if (myString.indexOf("string") === -1 ){
-  console.log("the word string is not in the string");
+if (myString.indexOf("ninja") === -1 ){
+  console.log("the word ninja is not in the string");
 }
 else {
-  console.log("the word string starts at position" )
+  console.log("the word string starts at position " + myString.indexOf("ninja"))
+}
+
+const num1 = parseInt (prompt("Enter your number: "));
+if (num1 > 18  ) {
+  console.log("Your number is grater than 18");
+}
+else {
+  console.log("Your number is less than 18");
+}
+
+const num = parseInt (prompt("Enter your number: "));
+if (num % 2 === 0 ) {
+  console.log("Your number is even");
+}
+else {
+  console.log("Your number is odd");
 }
