@@ -153,108 +153,129 @@ var links = document.getElementsByTagName("a");
 for (i = 1; i < links.length; i++) {
   console.log("This is link number ", +i);
 }
-document.write ("Äll the links have been displayed");
+document.write("Äll the links have been displayed");
 
-// Break and Continue loop 
+// Break and Continue loop
 for (i = 0; i < 10; i++) {
-if (i === 5 || i === 3 ){
-  continue;
-}
-console.log(i);
-if (i === 7){
-  break;
-}
+  if (i === 5 || i === 3) {
+    continue;
+  }
+  console.log(i);
+  if (i === 7) {
+    break;
+  }
 }
 console.log("Ï have broken outta the loop");
 
-// functions 
+// functions
 
-function getAverage (a,b){
-  var average = (a+b) /2; 
+function getAverage(a, b) {
+  var average = (a + b) / 2;
   console.log(average);
 }
-getAverage(5,6);
+getAverage(5, 6);
 
-// Variable scope 
+// Variable scope
 // In the upper cide average is created inside a functionfunction
 //so the variable can only used and called inside the function
-// If I create a variable outside a specific function, 
-// I can use it globally anywhere. 
+// If I create a variable outside a specific function,
+// I can use it globally anywhere.
 
-// Numbers 
-var a = 5; 
+// Numbers
+var a = 5;
 var b = 6;
-console.log(a+b);
+console.log(a + b);
 
-// but 
-var a = "5"; //here a is a string, not a number  
-var b = 6; 
+// but
+var a = "5"; //here a is a string, not a number
+var b = 6;
 
 // To check the data type, we can use this function called "type of"
-var a = 5; 
+var a = 5;
 var b = 6;
-console.log(a+b);
-console.log(typeof(a+b)); //it will show number in the debug console 
+console.log(a + b);
+console.log(typeof (a + b)); //it will show number in the debug console
 
-var a = "6"; 
+var a = "6";
 var b = 6;
-console.log(a+b);
-console.log(typeof(a+b)); //it will show string in the debug console
+console.log(a + b);
+console.log(typeof (a + b)); //it will show string in the debug console
 
-// Use of Math object in JS 
+// Use of Math object in JS
 console.log(Math.round(7.5));
 console.log(Math.floor(7.5));
 console.log(Math.ceil(7.5));
-console.log(Math.max(7,4,9,8));
-console.log(Math.min(7,4,9,8));
+console.log(Math.max(7, 4, 9, 8));
+console.log(Math.min(7, 4, 9, 8));
 console.log(Math.PI);
 
-// NaN Things 
-var a = "5"; 
-var b = 6; 
-if (isNaN(a)){
+// NaN Things
+var a = "5";
+var b = 6;
+if (isNaN(a)) {
   console.log("This is a number");
-}
-
-else {
+} else {
   console.log("This is not a number");
 }
-// When ! is used infront of some object then it becomes negative. 
-// Like (!ifNan (a)) means "a is not a number and it is false" or "a is a number" 
+// When ! is used infront of some object then it becomes negative.
+// Like (!ifNan (a)) means "a is not a number and it is false" or "a is a number"
 
-
-// Strings 
-var myString = 'I am a demo string';
+// Strings
+var myString = "I am a demo string";
 console.log(myString);
 
-var myString = 'I\'m a demo string';
+var myString = "I'm a demo string";
 console.log(myString);
-console.log(myString.length); //.length is to measure the length of the string 
+console.log(myString.length); //.length is to measure the length of the string
 console.log(myString.toUpperCase());
 console.log(myString.toLowerCase());
 console.log(myString.indexOf("string")); //.indexOf is used to to search the position of that specific word
 
-var myString = "I am a fun ninja string"; 
+var myString = "I am a fun ninja string";
 
-if (myString.indexOf("ninja") === -1 ){
+if (myString.indexOf("ninja") === -1) {
   console.log("the word ninja is not in the string");
-}
-else {
-  console.log("the word string starts at position " + myString.indexOf("ninja"))
+} else {
+  console.log(
+    "the word string starts at position " + myString.indexOf("ninja")
+  );
 }
 
-const num1 = parseInt (prompt("Enter your number: "));
-if (num1 > 18  ) {
+const num1 = parseInt(prompt("Enter your number: "));
+if (num1 > 18) {
   console.log("Your number is grater than 18");
-}
-else {
+} else {
   console.log("Your number is less than 18");
 }
 
-const num = parseInt (prompt("Enter your number: "));
-if (num % 2 === 0 ) {
+const num = parseInt(prompt("Enter your number: "));
+if (num % 2 === 0) {
   console.log("Your number is even");
-}
-else {
+} else {
   console.log("Your number is odd");
+}
+
+//Simple Calculator programme
+let input1 = parseInt(prompt("Enter your number: "));
+let input2 = parseInt(prompt("Enter your number: "));
+let operation = prompt("Enter your operation (+, -, *, /): ");
+
+if (operation === "+") {
+  const result = input1 + input2;
+  console.log("Result is " + result);
+} else if (operation === "-") {
+  const result = input1 - input2;
+  console.log("Result is " + result);
+} else if (operation === "*") {
+  const result = input1 * input2;
+  console.log("Result is " + result);
+} else if (operation === "/") {
+  if (input2 === 0) {
+    console.log("Division by zero is not allowed");
+  } else {
+    const result = input1 / input2;
+    console.log("Result is " + result);
+  }
+} else {
+  console.log("Please enter valid operator: +,-,*,/")
 }
