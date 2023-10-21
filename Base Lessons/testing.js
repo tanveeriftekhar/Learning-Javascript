@@ -255,7 +255,7 @@ if (num % 2 === 0) {
   console.log("Your number is odd");
 }
 
-//Simple Calculator programme
+// Simple Calculator programme
 let input1 = parseInt(prompt("Enter your number: "));
 let input2 = parseInt(prompt("Enter your number: "));
 let operation = prompt("Enter your operation (+, -, *, /): ");
@@ -278,4 +278,18 @@ if (operation === "+") {
   }
 } else {
   console.log("Please enter valid operator: +,-,*,/")
+}
+
+// Problem 3: Fibonacci Sequence
+let n = parseInt(prompt("Enter the number of Fibonacci terms you want: "));
+let current = 1; 
+let previous = 0; 
+for (let i =1; i<n; i++){
+  console.log("The current term is: ", current);
+  let nextTerm = current + previous;
+  // Update previous to the previous value of current.
+  previous = current;
+  
+  // Update current to the newly calculated term.
+  current = nextTerm;
 }
