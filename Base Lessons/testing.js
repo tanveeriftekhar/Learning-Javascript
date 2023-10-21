@@ -295,19 +295,19 @@ for (let i = 1; i < n; i++) {
 }
 
 // Prime number checker
-let p = parseInt(prompt("Enter your number: "));
+let p = parseInt(prompt("Enter your number:"));
 if (p > 1) {
   let isPrime = true;
-  for (i = 2; i <= Math.sqrt(p); i++) {
+  for (let i = 2; i <= Math.sqrt(p); i++) {
     if (p % i === 0) {
       isPrime = false;
       break;
     }
-    if (isPrime) {
-      console.log(`${p} is a prime number.`);
-    } else {
-      console.log(`${p} is not a prime number.`);
-    }
+  }
+  if (isPrime) {
+    console.log(`${p} is a prime number.`);
+  } else {
+    console.log(`${p} is not a prime number.`);
   }
 } else {
   console.log("Enter a number which is bigger than 1");
