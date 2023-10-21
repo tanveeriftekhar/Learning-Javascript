@@ -277,19 +277,38 @@ if (operation === "+") {
     console.log("Result is " + result);
   }
 } else {
-  console.log("Please enter valid operator: +,-,*,/")
+  console.log("Please enter valid operator: +,-,*,/");
 }
 
 // Problem 3: Fibonacci Sequence
 let n = parseInt(prompt("Enter the number of Fibonacci terms you want: "));
-let current = 1; 
-let previous = 0; 
-for (let i =1; i<n; i++){
+let current = 1;
+let previous = 0;
+for (let i = 1; i < n; i++) {
   console.log("The current term is: ", current);
   let nextTerm = current + previous;
   // Update previous to the previous value of current.
   previous = current;
-  
+
   // Update current to the newly calculated term.
   current = nextTerm;
+}
+
+// Prime number checker
+let p = parseInt(prompt("Enter your number: "));
+if (p > 1) {
+  let isPrime = true;
+  for (i = 2; i <= Math.sqrt(p); i++) {
+    if (p % i === 0) {
+      isPrime = false;
+      break;
+    }
+    if (isPrime) {
+      console.log(`${p} is a prime number.`);
+    } else {
+      console.log(`${p} is not a prime number.`);
+    }
+  }
+} else {
+  console.log("Enter a number which is bigger than 1");
 }
