@@ -320,3 +320,14 @@ function getAverage(a, b) {
 }
 
 getAverage(7,12);
+
+// To use the inside value out of the function, we need to return the main value. 
+// In that case, 
+function getAverage(a, b) {
+  var average = (a + b) / 2;
+  console.log(average);
+  return average;
+}
+
+var myResult = getAverage(7,12);
+console.log("The value of the operation is:  " + myResult);
