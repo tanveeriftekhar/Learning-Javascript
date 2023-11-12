@@ -343,3 +343,8 @@ function getAverage(a, b) {
 
 var myResult = getAverage(7,12); //here myResult is a global variable
 console.log("The value of the operation is:  " + myResult);
+
+function logResult(){
+  console.log("The average is: " + myResult); // since myResult is a global variable. we have used it in another function
+}
+logResult();
