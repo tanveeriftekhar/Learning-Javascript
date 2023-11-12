@@ -319,32 +319,55 @@ function getAverage(a, b) {
   console.log(average);
 }
 
-getAverage(7,12);
+getAverage(7, 12);
 
-// To use the inside value out of the function, we need to return the main value. 
-// In that case, 
+// To use the inside value out of the function, we need to return the main value.
+// In that case,
 function getAverage(a, b) {
   var average = (a + b) / 2;
   console.log(average);
   return average;
 }
 
-var myResult = getAverage(7,12);
+var myResult = getAverage(7, 12);
 console.log("The value of the operation is:  " + myResult);
 
-// Variable scope 
-//The difference between local and global variable is global variable can be used anywhere in the code 
-//whereas local variable can be used ONLY INSIDE the specific funtion 
+// Variable scope
+//The difference between local and global variable is global variable can be used anywhere in the code
+//whereas local variable can be used ONLY INSIDE the specific funtion
 function getAverage(a, b) {
-  var average = (a + b) / 2; //here average is a local variable 
+  var average = (a + b) / 2; //here average is a local variable
   console.log(average);
   return average;
 }
 
-var myResult = getAverage(7,12); //here myResult is a global variable
+var myResult = getAverage(7, 12); //here myResult is a global variable
 console.log("The value of the operation is:  " + myResult);
 
-function logResult(){
+function logResult() {
   console.log("The average is: " + myResult); // since myResult is a global variable. we have used it in another function
 }
 logResult();
+
+// Working with numbers
+// Just dont put "" within a number, else it will become a string
+
+console.log(Math.round(7.5));
+console.log(Math.floor(7.5));
+console.log(Math.ceil(7.5));
+console.log(Math.max(7, 4, 9, 8));
+console.log(Math.min(7, 4, 9, 8));
+console.log(Math.PI);
+
+// Nan = It means Not a number
+var a = 5;
+var b = "apple";
+console.log(a * b);
+//  The output will be shown Nan, because we cannot multiply a number with a string
+var a = "apple";
+var b = 5;
+if (isNaN(a)) {
+  console.log("Put a number idiot");
+} else {
+  console.log("The result is " + a * b);
+}
