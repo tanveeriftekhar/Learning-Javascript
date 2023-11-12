@@ -312,3 +312,11 @@ if (p > 1) {
 } else {
   console.log("Enter a number which is bigger than 1");
 }
+
+// Functions
+function getAverage(a, b) {
+  var average = (a + b) / 2;
+  console.log(average);
+}
+
+getAverage(7,12);
