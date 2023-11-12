@@ -331,3 +331,15 @@ function getAverage(a, b) {
 
 var myResult = getAverage(7,12);
 console.log("The value of the operation is:  " + myResult);
+
+// Variable scope 
+//The difference between local and global variable is global variable can be used anywhere in the code 
+//whereas local variable can be used ONLY INSIDE the specific funtion 
+function getAverage(a, b) {
+  var average = (a + b) / 2; //here average is a local variable 
+  console.log(average);
+  return average;
+}
+
+var myResult = getAverage(7,12); //here myResult is a global variable
+console.log("The value of the operation is:  " + myResult);
