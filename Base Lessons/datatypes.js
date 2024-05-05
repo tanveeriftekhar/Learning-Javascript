@@ -52,3 +52,5 @@ color = "black";
 color = "white";
 console. log (color);
 }
+
+//Ternery operator
