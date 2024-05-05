@@ -58,3 +58,7 @@ console. log (color);
 let age = 18;
 let result = age >= 18 ? "adult" : "not adult";
 console.log(result);
+
+//Also we can print result in the condition 
+let age1 = 18;
+age1 >= 18 ? console.log("adult") : console.log("not adult");
