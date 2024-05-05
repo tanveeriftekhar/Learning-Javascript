@@ -38,3 +38,17 @@ console.log(student["fullName"]);
 student["fullName"] = "Tashrin Tarannum Tanisha"
 console.log(student.fullName);
 
+//Conditional Statements
+
+let mode = "light";
+
+let color;
+if (mode === "dark") {
+
+color = "black";
+
+}if (mode === "light") {
+
+color = "white";
+console. log (color);
+}
