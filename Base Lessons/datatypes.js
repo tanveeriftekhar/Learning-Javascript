@@ -62,3 +62,13 @@ console.log(result);
 //Also we can print result in the condition 
 let age1 = 18;
 age1 >= 18 ? console.log("adult") : console.log("not adult");
+
+//Testing
+
+let num = prompt ("enter a number:");
+if(num & 5 === 0) {
+console. log(num, "is a multiple of 5");
+if(num & 5 === 0) {
+} else 
+console. log(num, " is NOT a multiple of 5");
+}
