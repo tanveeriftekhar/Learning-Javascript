@@ -72,3 +72,8 @@ if(num & 5 === 0) {
 } else 
 console. log(num, " is NOT a multiple of 5");
 }
+
+//Loops 
+for (let i = 1; i <= 5; i++){
+console.log("i = ", i);
+}
