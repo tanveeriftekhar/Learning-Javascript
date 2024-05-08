@@ -77,3 +77,12 @@ console. log(num, " is NOT a multiple of 5");
 for (let i = 1; i <= 5; i++){
 console.log("i = ", i);
 }
+
+
+//while loops
+let i =10;
+while (i<=100){
+    console.log("I Love You")
+    i++
+}
+
